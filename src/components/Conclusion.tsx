@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Typography, Container, List, ListItem, ListItemText, useTheme, Box, Grid, Paper } from '@mui/material';
+import { Typography, Container, useTheme, Box, Grid, Paper } from '@mui/material';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 const Conclusion: React.FC = () => {
