@@ -1,6 +1,5 @@
-
 import React, { useEffect } from 'react';
-import { Typography, Container, useTheme, Box, Grid, Paper } from '@mui/material';
+import { Typography, Container, List, ListItem, ListItemText, useTheme, Box, Grid, Paper } from '@mui/material';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 const Conclusion: React.FC = () => {
@@ -92,7 +91,7 @@ const Conclusion: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <Typography variant="body1" paragraph align="center" sx={{ color: theme.palette.text.secondary }}>
-            Truecaller sits at the intersection of utility and discomfort—it protects users but also raises silent anxiety around data and app behavior. Disguised research through MAXI allows uncovering these delicate insights—helping Truecaller:
+            Truecaller sits at the intersection of utility and discomfort, it protects users but also raises silent anxiety around data and app behavior. Disguised research through MAXI allows uncovering these delicate insights helping Truecaller:
           </Typography>
         </motion.div>
         <Grid container spacing={4} sx={{ mt: 4 }}>
@@ -113,6 +112,16 @@ const Conclusion: React.FC = () => {
             </Grid>
           ))}
         </Grid>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <Typography variant="h5" align="center" sx={{ mt: 8, color: theme.palette.primary.dark }}>
+            After all, isn’t everyone just trying to 'take the right call'!
+          </Typography>
+        </motion.div>
       </Container>
       {/* Animated Border */}
       <motion.svg
